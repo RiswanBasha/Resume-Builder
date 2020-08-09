@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB's CV Creator List</title>
+</head>
+<body>
+    <h2 style="font-family:Times New Roman;font-size:200%">{{ user_profile.name }}</h2>
+    <h2 style="font-family:Times New Roman;font-size:200%">{{ user_profile.email }}</h2>
+    <h3 style="font-family:Times New Roman;font-size:200%">Ph: {{ user_profile.phone }}</h3>
+    <h4 style="font-family:Times New Roman;font-size:200%">LinkedIn: {{ user_profile.linkedin }}</h4>
+    <hr/>
+    <hr/>
+    <br/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">SUMMARY</p>
+    <p style="font-family:Times New Roman;font-size:200%">{{ user_profile.summary }}</p>
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">SKILL SETS</p>
+    <ul>
+        <li style="font-family:Times New Roman;font-size:200%">{{ user_profile.skills }}</li>
+        <li style="font-family:Times New Roman;font-size:200%">{{ user_profile.skills2 }}</li>
+        <li style="font-family:Times New Roman;font-size:200%">{{ user_profile.skills3 }}</li>
+        <li style="font-family:Times New Roman;font-size:200%">{{ user_profile.oskills }}</li>
+    </ul>
+    
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">EDUCATION</p>
+    <ul>
+        <li style="font-family:Times New Roman;font-size:200%">SCHOOL : {{ user_profile.school }} with {{ user_profile.sgrade }} of Academic Marks</li>
+        <li style="font-family:Times New Roman;font-size:200%">UNDER GRADUATION : {{ user_profile.degree }} from {{ user_profile.university }} with {{ user_profile.ugrade }} of Academic Grade</li>
+        <li style="font-family:Times New Roman;font-size:200%">BRANCH : {{ user_profile.branch }}</li>
+    </ul>
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">CLUBS AND FORUMS</p>
+    <p> 
+        <pre style="font-family:Times New Roman;font-size:200%">{{ user_profile.previous_work }}</pre>
+        
+    </p>
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">PROJECTS</p>
+    
+        <pre style="font-family:Times New Roman;font-size:200%">{{ user_profile.projects}}</pre>
+    
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">CERTIFICATIONS</p>
+   
+        <pre style="font-family:Times New Roman;font-size:200%">{{ user_profile.certify}}</pre>
+    
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">ACHIEVEMENTS</p>
+    
+        <pre style="font-family:Times New Roman;font-size:200%">{{ user_profile.achievements}}</pre>
+    
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">LANGUAGES KNOWN</p>
+    <pre style="font-family:Times New Roman;font-size:200%">{{ user_profile.languages }}</pre>
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">HOBBIES</p>
+    <pre style="font-family:Times New Roman;font-size:200%">{{ user_profile.hobbies }}</pre>
+    <hr/>
+
+    <p style="font-family:Times New Roman;font-size:200%;font-weight: bold">ABOUT</p>
+    <pre style="font-family:Times New Roman;font-size:200%">{{ user_profile.about }}</pre>
+    <hr/>
+
+
+
+
+   
+
+    
+</body>
+</html>

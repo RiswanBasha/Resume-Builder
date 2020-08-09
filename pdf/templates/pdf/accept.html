@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>RB's CV Creator</title>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand"  href="#">RB's CV Creator</a> 
+                <div class="navbar"> 
+                    <ul class="navbar-nav"> 
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="list">View For Download</a> 
+                        </li> 
+                    </ul>
+                </div>
+                
+              </nav>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label for="">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" >
+                </div>
+        
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" >
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="">Phone</label>
+                    <input type="text" class="form-control" id="phone" name="phone" >
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="">Summary</label>
+                    <textarea type="text" class="form-control" id="summary" name="summary" ></textarea>
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="">Degree</label>
+                    <input type="text" class="form-control" id="degree" name="degree" >
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="">School</label>
+                    <input type="text" class="form-control" id="school" name="school" >
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="">University</label>
+                    <input type="text" class="form-control" id="university" name="university" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">UG Branch</label>
+                    <input type="text" class="form-control" id="branch" name="branch" >
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="">Clubs and Forums</label>
+                    <textarea type="text" class="form-control" id="previous_work" name="previous_work" ></textarea>
+                  </div>
+        
+                  <div class="form-group">
+                    <label for="">Skill Set 1</label>
+                    <textarea type="text" class="form-control" id="skills" name="skills" ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Skill Set 2</label>
+                    <input type="text" class="form-control" id="skills2" name="skills2">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Skill Set 3</label>
+                    <input type="text" class="form-control" id="skills3" name="skills3" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Other Skill Sets</label>
+                    <input type="text" class="form-control" id="oskills" name="oskills" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Achievements</label>
+                    <textarea type="text" class="form-control" id="achievements" name="achievements" ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Certifications</label>
+                    <textarea type="text" class="form-control" id="certify" name="certify" ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">LinkedIn Profile </label>
+                    <input type="text" class="form-control" id="linkedin" name="linkedin" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">12th Percentage</label>
+                    <input type="text" class="form-control" id="sgrade" name="sgrade" ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">University Grade</label>
+                    <input type="text" class="form-control" id="ugrade" name="ugrade" >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Hobbies</label>
+                    <textarea type="text" class="form-control" id="hobbies" name="hobbies" ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Projects</label>
+                    <textarea type="text" class="form-control" id="projects" name="projects" ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Languages Known</label>
+                    <textarea type="text" class="form-control" id="languages" name="languages" ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">About</label>
+                    <textarea type="text" class="form-control" id="about" name="about" ></textarea>
+                  </div>
+        
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+           </div>
+
+       </div>
+
+   </div>
+</body>
+</html>
